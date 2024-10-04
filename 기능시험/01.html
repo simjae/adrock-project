@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../common/common.css">
+
+<body>
+    <div class="container">
+        <main class="wrap content">
+            <header>
+                <h1>제1종 대형</h1>
+            </header>
+
+            <section>
+                <h2>준비물</h2>
+                <ul>
+                    <li>온라인 접수 또는 현장 예약 접수 후 시험 당일 응시원서, 신분증 지참</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>합격기준</h2>
+                <ul>
+                    <li>80점 이상</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>수수료</h2>
+                <ul>
+                    <li>20,000원</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>시험코스</h2>
+                <ul>
+                    <li>출발코스, 골절코스, 곡선코스, 방향전환코스, 평행주차코스, 기어변속코스, 교통신호가 있는 심차 교차로코스, 횡단보도 코스, 철길건널목코스, 정차로코스, 종료코스</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>실격기준</h2>
+                <ul>
+                    <li>특별한 사유 없이 출발선에서 30초 이내 출발하지 못할 때</li>
+                    <li>정차코스·출발코스·방향전환코스·기어변속코스(자동변속기 장치 자동차의 경우는 제외) 및 평행주차코스 중 어느 하나라도 이행하지 않았을 때</li>
+                    <li>교차로 진입 후에도 끝까지 30초 이상 정차하였을 때</li>
+                    <li>회전교차로 진입 후 1회 이상의 차로를 변경하였을 때</li>
+                    <li>좌석벨트를 착용하지 않거나 안전띠 착용에 의한 점수 감점이 있을 때</li>
+                    <li>도로교통법 제2조에 의한 특정한 위반과 같은 법규 및 제도들에 따른 시험 중 운행 시 사고를 일으킨 사람일 경우</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>응시자격</h2>
+                <ul>
+                    <li>19세 이상으로 제1·2종 보통면허 취득 후 1년 이상인 자</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>불합격 후 재 응시</h2>
+                <ul>
+                    <li>불합격한 불합격자는 (운전전문학원 검정 불합격 포함) 불합격 인지로부터 90일 경과 후에 재 응시 가능</li>
+                </ul>
+            </section>
+
+            <div class="button-group">
+                <button class="btn blue">응시일정 확인</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tabbuttons;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tabbuttons = document.getElementsByClassName("tab-button");
+        for (i = 0; i < tabbuttons.length; i++) {
+            tabbuttons[i].className = tabbuttons[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+
+</html>

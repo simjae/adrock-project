@@ -1,0 +1,237 @@
+/* 기본 스타일 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+header {
+  margin-top: 32px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+header h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+section {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+section h2 {
+  color: #3b6ff6;
+  font-family: "Core Gothic E";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  margin-bottom: 6px;
+}
+section p {
+  color: #222;
+  font-family: "Core Gothic E";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+section ul li {
+  color: #222;
+  font-family: "Core Gothic E";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+section ul li::before {
+  padding-bottom: 10px;
+  content: "- ";
+}
+p.note {
+  color: #f24b3b;
+  margin-top: 8px;
+  font-family: "Core Gothic E";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+/* 컨테이너 스타일 */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* 공통 wrap 스타일 */
+.wrap {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* 헤더 스타일 */
+.header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* 반응형 스타일 (모바일 우선 접근) */
+@media (min-width: 600px) {
+  .nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav ul li {
+    margin: 0 15px;
+  }
+
+  .content {
+    padding: 40px;
+  }
+}
+
+/* 테이블 스타일 */
+.custom-table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+.custom-table th,
+td {
+  text-align: center;
+  vertical-align: middle;
+  font-weight: normal;
+}
+
+.custom-table td {
+  border-bottom: 1px solid #dedede;
+}
+.custom-thead {
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  font-size: 12px;
+}
+
+.main-header:nth-child(1) {
+  padding: 8px;
+}
+.main-header:nth-child(2) {
+  padding: 8px;
+}
+.main-header:nth-child(3).option-col-th {
+  width: 120px;
+}
+.custom-tbody {
+  font-size: 10px;
+}
+.custom-tbody td {
+  padding: 8px;
+}
+.option-col-th {
+  border-bottom: 1px solid #dedede;
+}
+.sub-header {
+  font-size: 0.9em;
+}
+.exam-col {
+  width: 12.5%;
+}
+.check-circle {
+  background-color: #222;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.red {
+  background-color: rgb(239, 179, 179);
+}
+/* 응시전 교통안전교육 */
+.procedure-wrap {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.procedure-circle {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  background-color: #ffd62d;
+  opacity: 0.6;
+  border-radius: 50%;
+  margin-right: -8px;
+}
+.procedure-text-wrap {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  color: #222;
+  position: absolute;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.procedure-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  margin-right: -8px;
+}
+.procedure-text {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+/* 하단버튼 */
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: #007bff;
+}
+.button-group div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 40px;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  font-family: "Noto Sans CJK KR";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.button-group .default {
+  background-color: #3b6ff6;
+  border-radius: 8px;
+}
+.button-group .left {
+  background-color: #2146a4;
+  border-radius: 8px 0 0 8px;
+}
+.button-group .right {
+  background-color: #3b6ff6;
+  border-radius: 0 8px 8px 0;
+}

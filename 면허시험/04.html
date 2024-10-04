@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../common/common.css">
+
+<body>
+    <div class="container">
+        <main class="wrap content">
+            <header>
+                <h1>시험 자격</h1>
+            </header>
+
+            <section>
+                <h2>면허종류</h2>
+                <ul>
+                    <li>제1종 대형·특수면허 : 만19세 이상으로 1, 2종 보통면허 취득 후 1년 이상인 자</li>
+                    <li>제1종 보통·2종 보통·2종 소형면허 : 만18세 이상인 자</li>
+                    <li>제2종 원동기장치 자전거 면허 : 만16세 이상인 자</li>
+                    <li>제1종·2종 장애인 면허 : 장애인 운전능력평가에서 합격자, 1종을 취득하기 위해서는 1종에 부합되는 합격자</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>신체검사기준</h2>
+
+                <h3>시력 (교정시력 포함)</h3>
+                <ul>
+                    <li><strong>제1종 면허</strong>: 두 눈을 동시에 뜨고 씩 시력 0.8 이상, 두 눈의 시력이 각각 0.5 이상</li>
+                    <li>단, 한쪽 눈을 보지 못하는 사람은 제1종 대형·특수 운전면허를 받을 수 없으며, 제1종 보통 운전면허증을 취득하고자 하는 경우 다른 쪽 눈의 시력이 0.8 이상, 수직
+                        시야 20º, 수평 시야 120º 이상, 그리고 시야에 암점 또는 반맹이 없어야 함</li>
+                    <li><strong>제2종 면허</strong>: 두 눈을 동시에 뜨고 씩 시력 0.5 이상. 단, 한쪽 눈을 보지 못하는 사람은 다른 쪽 눈의 시력이 0.6 이상이어야 함
+                    </li>
+                </ul>
+
+                <h3>색채식별</h3>
+                <ul>
+                    <li>적, 녹, 황색의 색채식별 가능</li>
+                </ul>
+
+                <h3>청력</h3>
+                <ul>
+                    <li>제1종 대형·특수에 한하여 청력 55 데시벨의 소리를 들을 수 있을 것</li>
+                    <li>보청기 사용 시 40 데시벨의 소리를 들을 수 있을 것</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tabbuttons;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tabbuttons = document.getElementsByClassName("tab-button");
+        for (i = 0; i < tabbuttons.length; i++) {
+            tabbuttons[i].className = tabbuttons[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+
+</html>

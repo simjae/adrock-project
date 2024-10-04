@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../common/common.css">
+
+<body>
+    <div class="container">
+        <main class="wrap content">
+            <header>
+                <h1>신체검사</h1>
+            </header>
+
+            <section>
+                <h2>장소</h2>
+                <ul>
+                    <li>운전면허시험장 내 신체검사실 또는 병원</li>
+                    <li>(단, 문경, 강릉, 태백시험장은 신체검사실이 없으므로 병원에서 받아야 함)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>준비물 및 주의사항</h2>
+                <ul>
+                    <li>신분증, 6개월 이내 촬영한 컬러 사진 (규격 3.5cm × 4.5cm 2매)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>수수료</h2>
+                <ul>
+                    <li>시험장 내 신체검사실: 1종 대형/특수면허 7,000원, 기타 면허 6,000원</li>
+                    <li>건강검진결과서(운전면허시험장 등 제출 시 신체검사비 무료) (1종보통, 2종보통, 2종 소형 및 원동기장치자전거에 한함)</li>
+                    <li>시험장 내 신체검사를 하지 않으려면 병원에서 정규 신체검사를 받은 일반 건강검진 결과도 제출 가능</li>
+                    <li>※ 국민건강보험공단의 건강검진 및 정밀신체검사 결과는 운전면허신청일로부터 2년 이내의 것이어야 하며, 시력기준을 충족해야 함</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tabbuttons;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tabbuttons = document.getElementsByClassName("tab-button");
+        for (i = 0; i < tabbuttons.length; i++) {
+            tabbuttons[i].className = tabbuttons[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+
+</html>
